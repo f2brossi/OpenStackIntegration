@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/gallery"
+        android:icon="@drawable/document_photo_icon"
+        android:title="@string/back"
+        android:showAsAction="ifRoom"/>
+       <item
+        android:id="@+id/filemgr"
         android:icon="@drawable/folder_media_icon"
         android:title="@string/back"
         android:showAsAction="ifRoom"/>
