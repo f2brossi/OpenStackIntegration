@@ -24,12 +24,13 @@ You also need a backend running with the following minimal assets:
 
 At least two virtual machines :
 
-First vm with:
+First vm provisioned with:
+
 a reverse proxy 
 a JBoss server for identification from https://github.com/bluebossa63/openstack-server-apps
 an SMTP server
 
-Second vm with an OpenStack AllInOne with Swift and Keytone services ( using devstack or packstack)
+Second vm proviosioned with OpenStack allinone with services Swift and Keytone ( using devstack or packstack)
 
 
 h2. Maven
@@ -61,14 +62,16 @@ Intended as a proof of concept
 Features to come soon:
 
 Client side :
-- Project migration to IDE Android Studio 
+
+- Project migration to Android Studio 
 - Replace maven by gradle
+- Continuous integration with Travis.
 - Display sizes ( by file and by container ) 
 
 Server side :
 - Encryption
 - Thumbnails
-- scripts puppet/chef for each asset of the backend.
+- Scripts puppet and vagrant for each asset of the backend.
 
 
 h1. License
