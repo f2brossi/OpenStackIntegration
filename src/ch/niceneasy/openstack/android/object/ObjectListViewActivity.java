@@ -702,11 +702,10 @@ public class ObjectListViewActivity extends OpenstackListActivity {
                 }
                 String[] parts = filePath.split("/");
                 objectForUpload.setName(directory + parts[parts.length - 1]);
-                if (getApplicationState().isInSharingMode()) {
+                if ( mImageUri != null ) {
                     objectForUpload.getProperties().put("Content-Type",
                             "image/jpeg");
                 } else {
-                    // with file manager application is not in sharingMode
                     //TODO : improve this code
                     objectForUpload.getProperties().put("Content-Type",
                             "application/pdf");
