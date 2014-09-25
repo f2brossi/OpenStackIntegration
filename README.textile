@@ -31,6 +31,13 @@ an SMTP server
 Second one provisioned with an Openstack allinone with services Swift and Keytone running ( using devstack or packstack)
 
 
+For testing on a real device Wiko Rainbow connected on Linux with USB and adbdriver 
+update the file /etc/udev/rules.d/51-android.rules with the following line :
+
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0bb4", ATTRS{idProduct}=="0c02", MODE="0666"
+
+For others devices see : http://www.linux-usb.org/usb.ids
+
 h2. Maven
 
 Check this prerequisites:
