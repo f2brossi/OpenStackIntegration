@@ -66,7 +66,7 @@ Automatic provisionning of each asset of the backend with Puppet, Ansible an Vag
 
 - apache reverse proxy: https://github.com/f2brossi/ansible-apache-swift
 
-- jboss application server: https: //github.com/f2brossi/jboss7-standalone-vagrant
+- jboss application server: https://github.com/f2brossi/jboss7-standalone-vagrant
 
 - SMTP postfix server: https://github.com/f2brossi/puppet-postfix-gmail
 
@@ -89,8 +89,8 @@ On client side :
 On server side :
 - Encryption
 - Thumbnails
-- Ansible orchestration of the instanciation and the provisionning all assets of the backend with one command.
-- Automatic FireWall creation of the Openstack project with HEAT
+- Ansible orchestration for instanciation and provisionning of all assets of the backend.
+- Automatic creation of the Firewall with HEAT.
 
 
 h1. License
