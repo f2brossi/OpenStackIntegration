@@ -24,7 +24,7 @@ You also need a backend running with at least two virtual machines:
 
 First one provisioned with:
 
-a reverse proxy 
+an Apache2 reverse proxy 
 a JBoss server for identification from https://github.com/bluebossa63/openstack-server-apps
 an SMTP server
 
@@ -46,32 +46,26 @@ http://stackoverflow.com/questions/13554694/com-jayway-maven-plugins-android-gen
 
 Checkout the project and import "Existing maven project".
 
-h3. Maven Repositories
+h2. Manual setup of the Eclipse project
 
-none
-
-h2. Manual setup of the eclipse project
-
-Not recommended however you can find some very useful tips here https://github.com/bluebossa63/OpenStackIntegration
-
+You can find some very useful tips here https://github.com/bluebossa63/OpenStackIntegration
 
 h2. Android Client Features
 
-- Integrate a pdf file explorer ( install from Google Store "ES File Explorer" and "Adobe Reader"  is needed )   
-- Camera integration with a Wiko Rainbow Android 4.2.2 
+- Integrate a PDF file explorer ( installation from Google Store of "ES File Explorer" and "Adobe Reader" is needed )   
+- Camera integration with a low cost smart phone Wiko Rainbow ( Android 4.2.2.) 
 
 h2. Backend 
 
-Automatic provisionning of each asset of the backend with Puppet, Ansible an Vagrant:
+Automatic provisioning of each asset of the backend with is available with Puppet, Ansible an Vagrant:
 
-- apache reverse proxy: https://github.com/f2brossi/ansible-apache-swift
+- Apache2 reverse proxy: https://github.com/f2brossi/ansible-apache-swift
 
-- jboss application server: https://github.com/f2brossi/jboss7-standalone-vagrant
+- JBoss application server: https://github.com/f2brossi/jboss7-standalone-vagrant
 
 - SMTP postfix server: https://github.com/f2brossi/puppet-postfix-gmail
 
 - devstack with Swift and Keystone: https://github.com/f2brossi/vagrant-devstack-swift 
-
 
 
 Intended as a proof of concept
@@ -84,12 +78,14 @@ On client side :
 - Project migration to Android Studio 
 - Replace maven by gradle
 - Continuous integration with Travis.
-- Display sizes ( by file and by container ) 
+- Share an account with another user.
+- Display sizes ( by file and by container) 
 
 On server side :
 - Encryption
 - Thumbnails
-- Ansible orchestration for instanciation and provisionning of all assets of the backend.
+- manage sahring account with another user 
+- Ansible orchestration of all the backend in one vagrant command.
 - Automatic creation of the Firewall with HEAT.
 
 
