@@ -60,6 +60,19 @@ h2. Android Client Features
 - Integrate a pdf file explorer ( install from Google Store "ES File Explorer" and "Adobe Reader"  is needed )   
 - Camera integration with a Wiko Rainbow Android 4.2.2 
 
+h2. Backend 
+
+Automatic provisionning of each asset of the backend with Puppet, Ansible an Vagrant:
+
+- apache reverse proxy: https://github.com/f2brossi/ansible-apache-swift
+
+- jboss application server: https: //github.com/f2brossi/jboss7-standalone-vagrant
+
+- SMTP postfix server: https://github.com/f2brossi/puppet-postfix-gmail
+
+- devstack with Swift and Keystone: https://github.com/f2brossi/vagrant-devstack-swift 
+
+
 
 Intended as a proof of concept
 
@@ -76,7 +89,8 @@ On client side :
 On server side :
 - Encryption
 - Thumbnails
-- Scripts puppet and vagrant for each asset of the backend.
+- Ansible orchestration of the instanciation and the provisionning all assets of the backend with one command.
+- Automatic FireWall creation of the Openstack project with HEAT
 
 
 h1. License
