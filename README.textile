@@ -82,9 +82,11 @@ On client side :
 On server side :
 - Encryption ( using Barbican to store keys )
 - Thumbnails
-- manage sahring account with another user 
+- Manage sharing account with another user 
 - Ansible orchestration of all the backend in one vagrant command.
-- Automatic creation of the Firewall with HEAT.
+- Automatic war deployment with Ansible
+- Firewall creation with HEAT.
+- Create image with ubuntu+ ansible+ puppet+git
 
 
 h1. License
